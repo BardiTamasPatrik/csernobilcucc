@@ -1,0 +1,31 @@
+Akimov Aleksandr Fyodorovich,1953,Novosibirsk,1986,Moscow,Unit #4 Shift Supervisor,burns on 100% of body,Order For Courage of third degree,1100
+Baranov Anatoly Ivanovich,1953,Tsyurupynsk,1986,Moscow,Senior electrical engineer,lung injuries,Order For Courage of third degree,940
+Brazhnik Vyacheslav Stepanovych,1957,Atbasar,1986,Moscow,Senior turbine machinist operator,skin and intestinal injuries,Order For Courage of third degree,1120
+Degtyarenko Viktor Mykhaylovych,1954,Ryazan,1986,Moscow,Reactor operator,thermal and radiation burns,Order For Courage of third degree,390
+Ignatenko Vasily Ivanovych,1961,Sperizhe,1986,Moscow,Firefighter 6th Paramilitary Fire Department,skin and intestinal injuries,Hero of Ukraine Order of the Gold Star,1240
+Ivanenko Yekaterina Alexandrovna,1932,Nezhihov,1986,Moscow,Security guard,toxicity and respiratory insufficiency,Order of the Red Banner,840
+Khodemchuk Valery Ilyich,1951,Krapyvnya,1986,Chernobyl NPP,Senior operator Main circulating pump,explosion trauma,Order For Courage of third degree,0
+Kibenok Viktor Mykolayovych,1963,Sirohozskoho,1986,Moscow,Firefighter 6th Paramilitary Fire Department,skin and lung injuries,Hero of the Soviet Union,900
+Konoval Yuriy Ivanovych,1942,Ust-Pier,1986,Moscow,Electrician,respiratory insufficiency and cerebral oedema,Order For Courage of third degree,670
+Kudryavtsev Aleksandr Gennadiyevych,1957,Kirov,1986,Moscow,Reactor control chief engineer candidate,100% radiation burns,Order For Courage of third degree,500
+Kurguz Anatoly Kharlampiyovych,1957,Unechskoho,1986,Moscow,Senior reactor operator,thermal and radiation burn,Order of Lenin,550
+Lelechenko Aleksandr Grigoryevich,1938,Lubensky,1986,Kyiv,Deputy chief of the electrical shop,skin and intestinal injuries,Order of Lenin Hero of Ukraine,1080
+Lopatyuk Viktor Ivanovich,1960,Lilov,1986,Moscow,Electrician,bleeding through mechanical injury,Order of Lenin,590
+Luzganova Klavdia Ivanovna,1927,,1986,Moscow,Security guard,infection renal-hepatic insufficiency,Order of the Red Banner,440
+Novyk Aleksandr Vasylyovych,1961,Dubrovytsky,1986,Moscow,Turbine equipment machinist-inspector,infection and graft versus host disease,Order For Courage of third degree,1030
+Orlov Ivan Lukych,1945,,1986,,Chernobylenergozashita employee,skin and intestinal injuries,,1140
+Perchuk Kostyantyn Grigorovich,1952,Magadan,1986,Moscow,Turbine operator senior engineer,fatal lung injuries,Order For Courage of third degree,830
+Perevozchenko Valery Ivanovich,1947,Starodub,1986,Moscow,Foreman reactor section,infection and graft versus host disease,Order For Courage of third degree,630
+Popov Georgi Illiaronovich,1940,,1986,,Kharkiv Turboatom employee,lung injuries respiratory insufficiency,Order of Lenin,620
+Pravyk Volodymyr Pavlovych,1962,Chernobyl,1986,Moscow,Firefighter 2nd Militarized Fire Department,skin and intestinal injuries,Hero of the Soviet Union,1420
+Proskuryakov Viktor Vasilyevich,1955,Svobodnyj,1986,Moscow,Reactor Control Chief Engineer candidate,100% radiation burns,Order For Courage of third degree,650
+Savenkov Vladimir Ivanovych,1958,,1986,,Kharkiv Turboatom employee,toxicity and respiratory insufficiency,,700
+Shapovalov Anatoliy Ivanovych,1941,Kirovograd,1986,Moscow,Electrician,combined skin and lung injuries,Order For Courage of third degree,970
+Shashenok Vladimir Nikolaevich,1951,Schucha Dam,1986,Pripyat,Atomenergonaladka adjuster,thermal and radiation burns trauma,Order For Courage of third degree,0
+Sitnikov Anatoly Andreyevich,1940,Voskresenka,1986,Moscow,Deputy chief operational engineer,failed bone marrow transplant,Order of Lenin,470
+Telyatnikov Leonid Petrovich,1951,Vvedenka,2004,Kyiv,Firefighter 2nd Militarized Fire Department,cancer 18 years after accident,Hero of the Soviet Union,450
+Tishura Vladimir Ivanovych,1959,North Station,1986,Moscow,Firefighter 6th Paramilitary Fire Department,skin and intestinal injuries,Hero of Ukraine,1140
+Titenok Nikolai Ivanovych,1962,Vilcha,1986,Moscow,Firefighter 6th Paramilitary Fire Department,external and internal radiation burns,Hero of Ukraine,1300
+Toptunov Leonid Fedorovych,1960,Mykolaivka,1986,Moscow,Senior reactor control chief engineer,skin and intestinal injuries radiation burns,Order For Courage of third degree,950
+Vashchuk Nikolai Vasilievich,1959,Zhitomir,1986,Moscow,Firefighter 6th Paramilitary Fire Department,combined skin and intestinal injuries,Hero of Ukraine,1220
+Vershynin Yuriy Anatoliyovych,1959,Zuyevskaya,1986,Moscow,Turbine equipment machinist-inspector,fatal infections after bone marrow transplant,Order For Courage of third degree,750
