@@ -45,7 +45,7 @@ public class Program
 {
     static void Main()
     {
-        string filePath = "C:\\Users\\barditp\\source\\repos\\csernobilcucc\\csernobilcucc\\adatok.txt";
+        string filePath = @"C:\Users\barditp\source\repos\csernobilcucc\csernobilcucc\adatok.txt";
         var records = new List<ChernobylDataRecord>();
 
         try
@@ -57,11 +57,9 @@ public class Program
             foreach (var line in lines)
             {
                 var parts = line.Split(',');
-                if (parts.Length >= 9) // Legalább 9 mező kell
+                if (parts.Length >= 9)
                 {
                     string name = parts[0].Trim();
-
-                    // Biztonságos szám konvertálás üres mezők kezelésére
                     int birthYear = ParseIntSafe(parts.Length > 1 ? parts[1].Trim() : "0");
                     string birthPlace = parts.Length > 2 ? parts[2].Trim() : "";
                     int deathYear = ParseIntSafe(parts.Length > 3 ? parts[3].Trim() : "0");
@@ -71,7 +69,6 @@ public class Program
                     string officialRecognition = parts.Length > 7 ? parts[7].Trim() : "";
                     int receivedDoseRem = ParseIntSafe(parts.Length > 8 ? parts[8].Trim() : "0");
 
-                    // Description: 9. index-től minden
                     string description = "";
                     if (parts.Length > 9)
                     {
@@ -87,7 +84,7 @@ public class Program
                 }
             }
 
-            // Kiíratás
+            // Összes rekord kiírása
             Console.WriteLine($"Összesen {records.Count} rekord feldolgozva.\n");
 
             foreach (var rec in records)
@@ -103,15 +100,84 @@ public class Program
                     Console.WriteLine($"Leírás: {rec.Description}");
                 Console.WriteLine("-----------");
             }
+
+            Console.WriteLine("\n" + new string('=', 50));
+            Console.WriteLine("STATISZTIKÁK");
+            Console.WriteLine(new string('=', 50));
+
+            // 1. LEGNAGYOBB DÓZIST KAPOTT EMBER
+            PrintLargestDose(records);
+
+            // 2. KI KAPTA A LEGTÖBB KITÜNTETÉST
+            PrintMostRecognized(records);
+
+            // 3. AKI LEGJOBBAN ÉLT A BALESET UTÁN (1986 után)
+            PrintLongestSurvivedAfter1986(records);
+
         }
         catch (Exception ex)
         {
             Console.WriteLine("Hiba a feldolgozás során: " + ex.Message);
-            Console.WriteLine("Részletek: " + ex.ToString());
         }
     }
 
-    // Biztonságos int konvertálás üres/null értékekhez
+    static void PrintLargestDose(List<ChernobylDataRecord> records)
+    {
+        var maxDose = records.Where(r => r.ReceivedDoseRem > 0)
+                            .OrderByDescending(r => r.ReceivedDoseRem)
+                            .FirstOrDefault();
+
+        Console.WriteLine("\nLEGNAYOBB DÓZIST KAPOTT EMBER:");
+        if (maxDose != null)
+        {
+            Console.WriteLine($"{maxDose.Name}");
+            Console.WriteLine($"Dózis: {maxDose.ReceivedDoseRem} rem");
+            Console.WriteLine($"Halál: {maxDose.DeathYear} ({maxDose.CauseOfDeath})");
+        }
+        else
+        {
+            Console.WriteLine("Nincs dózis adat");
+        }
+    }
+
+    static void PrintMostRecognized(List<ChernobylDataRecord> records)
+    {
+        var mostRecognized = records.Where(r => !string.IsNullOrWhiteSpace(r.OfficialRecognition))
+                                   .OrderByDescending(r => r.OfficialRecognition.Length)
+                                   .FirstOrDefault();
+
+        Console.WriteLine("\nKI KAPTA A LEGTÖBB KITÜNTETÉST:");
+        if (mostRecognized != null && !string.IsNullOrEmpty(mostRecognized.OfficialRecognition))
+        {
+            Console.WriteLine($"{mostRecognized.Name}");
+            Console.WriteLine($"Kitüntetések: {mostRecognized.OfficialRecognition}");
+        }
+        else
+        {
+            Console.WriteLine("Nincs elismerési adat");
+        }
+    }
+
+    static void PrintLongestSurvivedAfter1986(List<ChernobylDataRecord> records)
+    {
+        var longestSurvived = records.Where(r => r.DeathYear > 1986)
+                                    .Select(r => new { Record = r, YearsAfter = r.DeathYear - 1986 })
+                                    .OrderByDescending(x => x.YearsAfter)
+                                    .FirstOrDefault();
+
+        Console.WriteLine("\nKI ÉLT A LEGTÖBBET A BALESET UTÁN (1986 után):");
+        if (longestSurvived != null)
+        {
+            Console.WriteLine($"{longestSurvived.Record.Name}");
+            Console.WriteLine($"Élt még: {longestSurvived.YearsAfter} évig (meghalt: {longestSurvived.Record.DeathYear})");
+            Console.WriteLine($"Dózis: {longestSurvived.Record.ReceivedDoseRem} rem");
+        }
+        else
+        {
+            Console.WriteLine("Nincs ilyen adat");
+        }
+    }
+
     static int ParseIntSafe(string value)
     {
         if (string.IsNullOrWhiteSpace(value) || value == "")
