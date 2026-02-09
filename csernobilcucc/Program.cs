@@ -111,7 +111,7 @@ public class Program
             // 2. KI KAPTA A LEGTÖBB KITÜNTETÉST
             PrintMostRecognized(records);
 
-            // 3. AKI LEGJOBBAN ÉLT A BALESET UTÁN (1986 után)
+            // 3. AKI LEGTOVÁBB ÉLT A BALESET UTÁN (1986 után)
             PrintLongestSurvivedAfter1986(records);
 
         }
